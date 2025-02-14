@@ -1,0 +1,12 @@
+STEPS FOR GIT:
+STEP 1: Create a New Git Repository locally
+          i. Open a Terminal or Command Prompt.
+         ii. Navigate to the  desired directory where you want to create your new repository:- cd path/to/your/directory
+         iii. Initialize a new Git Repository with name as Enrollment No.:-   git init Enrollment No.
+STEP 2: Create a New Folder
+         i. Create a new folder for your project(e.g:- "Assignment1" and "Assignment2"):-
+            mkdir assignment1
+            mkdir assignment2
+STEP 3: Add and Commit changes
+     i. add the new files or folders to the staging area:- git add.
+
