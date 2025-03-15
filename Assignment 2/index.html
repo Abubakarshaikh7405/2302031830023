@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Virtual Reality Coding - Login</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #f4f4f4;
+        }
+
+        .container {
+            display: flex;
+            width: 900px;
+            height: 500px;
+            background: white;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+            border-radius: 10px;
+            overflow: hidden;
+        }
+
+        .form-section {
+            width: 50%;
+            padding: 40px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+
+        h1 {
+            font-size: 28px;
+            font-weight: bold;
+        }
+
+        p {
+            margin: 10px 0;
+            font-size: 16px;
+        }
+
+        p a {
+            color: red;
+            text-decoration: none;
+        }
+
+        .social-login {
+            display: flex;
+            gap: 10px;
+            margin: 10px 0;
+        }
+
+        .social-btn {
+            flex: 1;
+            padding: 10px;
+            border: none;
+            cursor: pointer;
+            font-size: 14px;
+            border-radius: 5px;
+            color: white;
+            transition: 0.3s ease-in-out;
+        }
+
+        .google-btn {
+            background: #4285F4;
+        }
+
+        .facebook-btn {
+            background: #1877F2;
+        }
+
+        .social-btn:hover {
+            transform: scale(1.05);
+        }
+
+        input {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            transition: 0.3s;
+        }
+
+        input:focus {
+            border-color: #1877F2;
+            box-shadow: 0 0 5px rgba(24, 119, 242, 0.5);
+        }
+
+        .btn {
+            width: 100%;
+            padding: 10px;
+            background: #FFD580;
+            border: none;
+            cursor: pointer;
+            font-size: 16px;
+            font-weight: bold;
+            border-radius: 5px;
+            transition: 0.3s;
+        }
+
+        .btn:hover {
+            background: #FFC107;
+        }
+
+        .image-section {
+            width: 50%;
+            background: url('your-image-path.jpg') center/cover no-repeat;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        footer {
+            text-align: center;
+            font-size: 12px;
+            padding: 5px;
+            width: 100%;
+            background: #d5d5f7;
+            position: absolute;
+            bottom: 0;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <div class="form-section">
+            <h1>Virtual Reality Coding:</h1>
+            <p>Already have an account? <a href="#">Log in</a></p>
+            <div class="social-login">
+                <button class="social-btn google-btn">Login via Google</button>
+                <button class="social-btn facebook-btn">Login via Facebook</button>
+            </div>
+            
+            <input type="text" placeholder="Full name" required>
+            <input type="email" placeholder="Email Address" required>
+            <input type="password" placeholder="Password" required>
+            
+            <button class="btn" onclick="redirectToIntro()">Create Account</button>
+        </div>
+        <div class="image-section">
+            
+            <img src="C:\Users\Abu\Desktop\figma\login page.jpeg" alt="Virtual Reality AI" width="100%">
+        </div>
+    </div>
+
+    <footer>All Copyrights are reserved by Mamdou Ghaneemy</footer>
+
+    <script>
+        function redirectToIntro() {
+            window.location.href = "immersive_coding.html"; 
+        }
+    </script>
+
+</body>
+</html>
